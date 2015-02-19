@@ -1,0 +1,13 @@
+<h1>RoR Error Messages?</h1>
+<h3> what to do...</h3>
+
+<p>Follow your error message below for more information to 'your friend the error message' .</p>
+
+<ul>
+  <% @errors.each do |errors| %>
+  <li><%= link_to errors.title, errors %></li><br>
+	<% end %>
+</ul>
+
+<%= link_to "Create new Error", new_error_path %>
+

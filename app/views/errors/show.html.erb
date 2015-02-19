@@ -1,0 +1,10 @@
+<h1><%= @error.title %></h1>
+
+<p><%= @error.text %></p>
+
+<%= image_tag @error.image.url(:medium) %>
+
+<p><%= link_to "Edit", edit_error_path %>
+<%= link_to "Delete", error_path, method: :delete %>
+
+<%= link_to "Home page", root_path %></p>
